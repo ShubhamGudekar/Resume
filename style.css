@@ -1,0 +1,43 @@
+* {
+  background-color: #393e46;
+  color: azure;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+body > img {
+  float: right;
+  padding: 20px;
+  border-radius: 25%;
+}
+
+ul,
+p {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+a > img {
+  background-color: azure;
+  border-radius: 25%;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#reference {
+  text-align: center;
+}
