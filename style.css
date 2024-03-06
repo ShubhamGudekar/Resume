@@ -3,27 +3,31 @@
   color: azure;
 }
 
+#reference,
 h1 {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 body > img {
   float: right;
-  padding: 20px;
+  padding: 15px;
   border-radius: 25%;
 }
 
 ul,
 p {
   margin: 0;
+  font-size: large;
 }
 
 h2 {
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 h3 {
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
@@ -38,6 +42,12 @@ a > img {
   margin-bottom: 0px;
 }
 
-#reference {
-  text-align: center;
+.subSkills {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.subSkills > li {
+  flex-basis: auto;
 }
