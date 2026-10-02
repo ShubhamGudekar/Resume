@@ -224,7 +224,8 @@ h1 {
 }
 
 /* shown only on paper, where the icon links can't be clicked */
-.print-contact {
+.print-contact,
+.print-qr {
   display: none;
 }
 
@@ -417,6 +418,14 @@ footer {
     gap: 5px;
     margin: 0;
     white-space: nowrap;
+  }
+  /* scans to the live site from a paper copy */
+  .print-qr {
+    display: block;
+    width: 24mm;
+    height: 24mm;
+    margin-left: auto;
+    flex-shrink: 0;
   }
   .print-contact img,
   .print-contact svg {
