@@ -3,10 +3,10 @@ body {
   color: azure;
   font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 880px;
   margin: 0 auto;
-  padding: 32px 20px;
+  padding: 48px 24px;
 }
 
 a {
@@ -16,8 +16,8 @@ a {
 header {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 8px;
+  gap: 28px;
+  margin-bottom: 16px;
 }
 
 .photo {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .tagline {
-  margin: 2px 0;
+  margin: 4px 0;
   font-weight: 600;
   color: #8fd3ff;
 }
@@ -54,12 +54,12 @@ h1 {
 
 section {
   border-top: 1px solid #5b616b;
-  padding-top: 8px;
-  margin-top: 18px;
+  padding-top: 20px;
+  margin-top: 32px;
 }
 
 h2 {
-  margin: 0 0 6px;
+  margin: 0 0 14px;
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -86,11 +86,15 @@ ul {
 }
 
 li {
-  margin: 3px 0;
+  margin: 6px 0;
 }
 
 article {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+article:last-child {
+  margin-bottom: 0;
 }
 
 .row {
@@ -101,6 +105,15 @@ article {
 }
 
 .sub {
+  margin-top: 16px;
+}
+
+.desig {
+  margin-top: 2px;
+}
+
+/* space between a role/project heading and its bullets */
+.row + ul {
   margin-top: 6px;
 }
 
@@ -126,6 +139,11 @@ article {
   padding-left: 0;
 }
 
+.skills li,
+.edu li {
+  margin: 8px 0;
+}
+
 .edu li {
   display: flex;
   justify-content: space-between;
@@ -134,14 +152,17 @@ article {
 
 footer {
   border-top: 1px solid #5b616b;
-  margin-top: 24px;
-  padding-top: 8px;
+  margin-top: 40px;
+  padding-top: 16px;
   color: #c8d0d8;
   font-size: 0.9em;
 }
 
 /* phones: stack dates under their titles */
 @media (max-width: 600px) {
+  body {
+    padding: 32px 18px;
+  }
   header {
     flex-direction: column;
     text-align: center;
@@ -149,6 +170,9 @@ footer {
   .row,
   .edu li {
     flex-direction: column;
-    gap: 0;
+    gap: 2px;
+  }
+  .edu li {
+    margin: 12px 0;
   }
 }
