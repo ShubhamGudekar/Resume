@@ -24,12 +24,22 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="toolbar">
+    <a id="download-pdf" href="./Shubham_Gudekar_Resume.pdf" download aria-label="Download PDF resume">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg
+      ><span class="label">Download PDF</span>
+    </a>
     <button id="theme-toggle" type="button" aria-label="Colour theme: follows your system. Click to change.">
       <svg class="icon i-auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg
       ><svg class="icon i-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></svg
       ><svg class="icon i-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg
       ><span class="label">Auto</span>
     </button>
+    </div>
+    <div id="print-toast" role="status" aria-live="polite" hidden>
+      Want a one-page copy? <a href="./Shubham_Gudekar_Resume.pdf" download>Download the PDF resume</a>
+      <button type="button" aria-label="Close">×</button>
+    </div>
     <main>
     <header>
       <img class="photo" src="./Assets/Shubham.jpg" alt="Shubham Gudekar" width="150" height="150" />
@@ -46,10 +56,25 @@
           /></a>
           <a href="mailto:gudekarshubham@gmail.com"><img src="./Assets/gmail.svg" alt="Email" /></a>
         </nav>
-        <p class="print-contact">
-          gudekarshubham@gmail.com · linkedin.com/in/gudekarshubham · github.com/gudekarshubham ·
-          gudekarshubham.github.io
-        </p>
+        <ul class="print-contact">
+          <li>
+            <img src="./Assets/gmail.svg" alt="" /><a href="mailto:gudekarshubham@gmail.com">gudekarshubham@gmail.com</a>
+          </li>
+          <li>
+            <img src="./Assets/linkedin.svg" alt="" /><a href="https://linkedin.com/in/gudekarshubham"
+              >linkedin.com/in/gudekarshubham</a
+            >
+          </li>
+          <li>
+            <img src="./Assets/github-icon.svg" alt="" /><a href="https://github.com/gudekarshubham"
+              >github.com/gudekarshubham</a
+            >
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg
+            ><a href="https://gudekarshubham.github.io/">gudekarshubham.github.io</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -268,6 +293,23 @@
           show(next);
         });
         show(current());
+      })();
+
+      // printing still works; we just point people to the ready-made PDF as well
+      (function () {
+        var toast = document.getElementById("print-toast");
+        var timer;
+        function offer() {
+          toast.hidden = false;
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            toast.hidden = true;
+          }, 10000);
+        }
+        window.addEventListener("afterprint", offer);
+        toast.querySelector("button").addEventListener("click", function () {
+          toast.hidden = true;
+        });
       })();
     </script>
   </body>
