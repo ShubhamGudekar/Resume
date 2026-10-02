@@ -2,153 +2,194 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shubham Gudekar – Software Engineer (Java)</title>
+    <meta
+      name="description"
+      content="Software Engineer at Accops: Java test automation, C++ for the VDI product, and Java backend projects with Spring Boot and Kafka."
+    />
+    <meta property="og:title" content="Shubham Gudekar – Software Engineer (Java)" />
+    <meta property="og:description" content="Java · Spring Boot · REST APIs · SQL" />
+    <meta property="og:image" content="https://shubhamgudekar.github.io/Resume/Assets/Shubham.jpg" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Shubham Gudekar</h1>
-    <div id="reference">
-      <a href="https://linkedin.com/in/gudekarshubham" target="_blank"
-        ><img src="./Assets/linkedin.svg" alt="Linkedin"
-      /></a>
-      <a href="https://github.com/ShubhamGudekar" target="_blank"
-        ><img src="./Assets/github-icon.svg" alt="Github"
-      /></a>
-      <a href="mailto:gudekarshubham@gmail.com" target="_blank"
-        ><img src="./Assets/gmail.svg" alt="Gmail"
-      /></a>
-      <hr />
-    </div>
-    <img src="./Assets/Shubham.jpg" height="200" />
-    <h2>Summary</h2>
-    <p>
-      Dynamic and skilled Java Developer proficient in utilizing TestNG
-      framework within Selenium to automate test cases. Adept at leveraging Java
-      programming language to develop efficient and scalable automation scripts,
-      enabling comprehensive test coverage and expedited release cycles.
-      Collaborative team player with a passion for continuous learning and
-      improvement in software development practices.
-    </p>
-    <hr />
+    <header>
+      <img class="photo" src="./Assets/Shubham.jpg" alt="Shubham Gudekar" width="130" height="160" />
+      <div>
+        <h1>Shubham Gudekar</h1>
+        <p class="tagline">Software Engineer · Java · Spring Boot · REST APIs · SQL</p>
+        <p class="location">Pune, India</p>
+        <nav id="reference">
+          <a href="https://linkedin.com/in/gudekarshubham" target="_blank" rel="noopener"
+            ><img src="./Assets/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/ShubhamGudekar" target="_blank" rel="noopener"
+            ><img src="./Assets/github-icon.svg" alt="GitHub"
+          /></a>
+          <a href="mailto:gudekarshubham@gmail.com"><img src="./Assets/gmail.svg" alt="Email" /></a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Education</h2>
-    <ul>
-      <li>
-        PG-DAC - Institute of Advanced Computing and Software Development (Sept
-        2022-Mar 2023)
-      </li>
-      <li>
-        BE Electrical Engineering - Finolex Academy of Management & Technology,
-        Ratnagiri (Jul 2013 - June 2017)
-      </li>
-      <li>HSC - D.B.J. College , Chiplun (Jul 2011 - May 2013)</li>
-      <li>
-        SSC - Christ Jyoti Convent High School,Chiplun (May 2010 - Apr 2011)
-      </li>
-    </ul>
-    <hr />
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Software Engineer with 3.5 years at Accops (secure remote-access and VDI software): 2.5 years
+        building Java test automation (Selenium, TestNG, Jenkins CI/CD), now developing C++ features in
+        the VDI team. Hands-on with Java 17, Spring Boot 3, Spring Data JPA, Kafka, MySQL and Docker
+        through personal projects; focused on Java backend development. Earlier, 4+ years delivering
+        SCADA and substation-automation projects in India, Kuwait and Bangladesh.
+      </p>
+    </section>
 
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <h3>
-          Accops Systems Pvt. Ltd - Software Engineer (Apr 2023 - Present)
-        </h3>
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><b>Languages:</b> Java, SQL, Go, JavaScript, C++ (working knowledge)</li>
+        <li>
+          <b>Backend:</b> Spring Boot, Spring Data JPA, Hibernate, Spring Security (JWT), REST APIs,
+          Microservices, Apache Kafka, OpenAPI/Swagger
+        </li>
+        <li><b>Testing &amp; CI/CD:</b> Selenium WebDriver, TestNG, JUnit, Jenkins CI/CD pipelines, Maven</li>
+        <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
+        <li><b>Tools:</b> Git, Docker, Docker Compose, Linux, IntelliJ IDEA, AI-assisted development (Claude Code)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article>
+        <div class="row"><h3>Accops · Pune, India</h3><span class="when">Apr 2023 – Present</span></div>
+        <p class="desig">
+          Associate Engineer, Automation (Apr 2023) → Software Engineer (Apr 2024) → Software Engineer 2 (Apr 2025)
+        </p>
+        <div class="row sub"><h4>C++ Development · VDI Team</h4><span class="when">Oct 2025 – Present</span></div>
         <ul>
           <li>
-            Utilized Java programming language to design, develop, and maintain
-            automation scripts for testing purposes.
-          </li>
-          <li>
-            Collaborated with team members to streamline and optimize the TestNG
-            framework within the testing ecosystem.
-          </li>
-          <li>
-            Maintained comprehensive documentation of automation scripts,
-            testing processes, and test results.
-          </li>
-          <li>
-            Explored opportunities for optimizing testing processes, reducing
-            redundancy, and increasing overall efficiency.
+            Develop C++ features for Accops' VDI product to improve the end-user virtual desktop
+            experience, using Claude Code for AI-assisted development.
           </li>
         </ul>
-      </li>
+        <div class="row sub"><h4>Test Automation</h4><span class="when">Apr 2023 – Sep 2025</span></div>
+        <ul>
+          <li>
+            Automated 300+ web UI regression test cases in Java with Selenium WebDriver and TestNG,
+            running after every build in the Jenkins CI/CD pipeline.
+          </li>
+          <li>Built a test automation framework from scratch and extended the team's existing framework.</li>
+          <li>
+            Automated and stabilised the BAT (build acceptance) and sanity suites; recognised with the
+            Accops Special Kudos award (Mar 2024).
+          </li>
+        </ul>
+      </article>
 
-      <li>
-        <h3>Reliserv Solution - SCADA Engineer(Dec 2021 - Jun 2022)</h3>
+      <article>
+        <div class="row"><h3>Reliserv Solution · SCADA Engineer · Panvel</h3><span class="when">Dec 2021 – Jun 2022</span></div>
         <ul>
           <li>
-            Understanding customer drawing, designing HMI/SCADA screen and
-            integrating SCADA equipment’s with existing system.
+            Designed HMI/SCADA screens from customer drawings, integrated relays and multi-function meters
+            with SCADA systems, and tested and commissioned SCADA and control &amp; relay panels.
           </li>
-          <li>
-            Relay & Multi-Function Meter communication and integration with
-            SCADA system.
-          </li>
-          <li>
-            Testing and Commissioning of SCADA system and Control and Relay
-            Panels.
-          </li>
-          <li>
-            Key Projects : 400kV Waluj Substation (Aurangabad), 230kV Ghorasal
-            Substation (Bangladesh), 230 kV Jhenaidah Substation (Bangladesh).
-          </li>
+          <li>Projects: Waluj substation (Aurangabad); Ghorasal and Jhenaidah substations (Bangladesh).</li>
         </ul>
-      </li>
-      <li>
-        <h3>Ashida Electronics - Project Engineer (Jan 2018 - Dec 2021)</h3>
+      </article>
+
+      <article>
+        <div class="row"><h3>Ashida Electronics · Project Engineer · Thane</h3><span class="when">Jan 2018 – Dec 2021</span></div>
         <ul>
           <li>
-            Conducted project site visits to meet with testing staff, evaluate
-            progress and discuss operational issues.
+            Managed on-site commissioning and worked with testing staff to resolve operational issues,
+            delivering projects before deadlines.
+          </li>
+          <li>Projects: Al-Zour Oil Refinery (Kuwait); Mangaon, Kankavli and Volkswagen traction substations.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <article>
+        <div class="row">
+          <h3>
+            <a href="https://github.com/ShubhamGudekar/LMS-SpringBoot-Microservices" target="_blank" rel="noopener"
+              >Library Management System</a
+            >
+            <span class="stack">Java 17, Spring Boot 3, Kafka, MySQL, Docker</span>
+          </h3>
+          <span class="when">2024 – in progress</span>
+        </div>
+        <ul>
+          <li>
+            Building three Spring Boot microservices (books, customers, borrowing) that publish and consume
+            domain events over Apache Kafka, with each service keeping a local copy of the data it needs.
           </li>
           <li>
-            Managed project commissioning site activities smoothly to complete
-            it before deadline. .
+            Services run with Docker Compose alongside MySQL and Kafka (KRaft) and start once MySQL is
+            healthy; REST APIs documented with OpenAPI/Swagger.
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <div class="row">
+          <h3>
+            <a href="https://github.com/ShubhamGudekar/Ghar-Ka-Dabba" target="_blank" rel="noopener">Ghar Ka Dabba</a>
+            <span class="stack">Spring Boot, Spring Security, JWT, MySQL, React</span>
+          </h3>
+          <span class="when">2023</span>
+        </div>
+        <ul>
+          <li>
+            Two-person PG-DAC capstone; built most of the Spring Boot backend: REST APIs for customers,
+            vendors and admins covering subscription plans, orders, payments and image uploads.
           </li>
           <li>
-            Key Projects : Al-Zour Oil Refinery Project(Kuwait) , 100kV Mangoan
-            Traction Substation, 132 kV Kankavli Traction Substation, 220 kV
-            Volkswagon Traction Substation.
+            Implemented stateless JWT authentication with Spring Security and BCrypt, plus email OTP
+            (10-minute expiry) for verification and password reset.
           </li>
         </ul>
-      </li>
-    </ul>
-    <hr />
-    <h2 id="skills">Skills</h2>
-    <ul>
-      <li>
-        <h3>Technical Skills</h3>
-        <ul class="subSkills">
-          <li>Java</li>
-          <li>Springboot</li>
-          <li>Selenium</li>
-          <li>SQL</li>
-          <li>JavaScript</li>
-          <li>React.JS</li>
+      </article>
+
+      <article>
+        <div class="row">
+          <h3>
+            <a href="https://github.com/ShubhamGudekar/Task-Management-Backend" target="_blank" rel="noopener"
+              >Task Management API</a
+            >
+            <span class="stack">Go, Gin, GORM, PostgreSQL, JWT</span>
+          </h3>
+          <span class="when">2025</span>
+        </div>
+        <ul>
+          <li>REST API with JWT-protected routes, a layered controller/service/repository design and GORM auto-migrations.</li>
         </ul>
-      </li>
-      <li>
-        <h3>Soft Skills</h3>
-        <ul class="subSkills">
-          <li>Problem Solving</li>
-          <li>Quick Learner</li>
-          <li>Leadership</li>
-          <li>Team Collaboration</li>
-          <li>Project Management</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <h2>Certifications</h2>
-    <ul>
-      <li>
-        Post Graduation - Diploma in Industrial Automation (Jul 2017 - Jan 2018)
-      </li>
-    </ul>
-    <hr />
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <span><b>PG Diploma in Advanced Computing (PG-DAC)</b> · C-DAC, IACSD Pune</span
+          ><span class="when">2022 – 2023</span>
+        </li>
+        <li>
+          <span><b>B.E. Electrical Engineering</b> · Finolex Academy of Management &amp; Technology, Ratnagiri</span
+          ><span class="when">2013 – 2017</span>
+        </li>
+        <li>
+          <span><b>PG Diploma in Industrial Automation</b> · SAGE Automation</span
+          ><span class="when">2017 – 2018</span>
+        </li>
+      </ul>
+    </section>
+
     <footer>
-      <p>© 2024 Shubham Gudekar.</p>
+      <p>© 2026 Shubham Gudekar</p>
     </footer>
   </body>
 </html>
